@@ -41,7 +41,7 @@ function calculateAge() {
         year3--;
     }
 
-    result.innerHTML = `You are ${year3} years, ${month3} months, and ${date3} days old`;
+    result.innerHTML = `You are <span>${year3} years</span>, <span>${month3} months </span>, and <span>${date3} days</span> old`;
 }
 
 function getDaysInMonth(year, month) {
