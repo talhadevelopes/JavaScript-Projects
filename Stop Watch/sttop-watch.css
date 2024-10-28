@@ -8,3 +8,29 @@
 body {
     background-color: rgb(48, 44, 44);
 }
+
+.stopwatch {
+    width: 90%;
+    max-width: 600px;
+    background-image: url('https://www.hdwallpapers.in/download/sunset_scenery-wide.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 40px 0;
+    margin: 200px auto 0;
+    border-radius: 20px;
+}
+
+.stopwatch h1 {
+    margin-top: 60px;
+    font-size: 64px;
+    font-weight: 300;
+}
+
+.buttons button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 50px;
+}
