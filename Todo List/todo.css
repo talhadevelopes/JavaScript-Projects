@@ -3,3 +3,111 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153798, #4e085f);
+    padding: 10px;
+}
+
+.todo-app {
+    margin: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    background-color: white;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2 {
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app h2 i {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    padding: 16px 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    color: white;
+    background-color: orange;
+    font-weight: 500;
+}
+
+
+ul li {
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--Font Awesome Free 6.6.0--%3E%3Cpath d='M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z'/%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: center;
+    top: 7px;
+    left: 8px;
+}
+
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--Font Awesome Free 6.6.0 by @fontawesome--%3E%3Cpath d='M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z'/%3E%3C/svg%3E");
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    color: #555;
+    text-align: center;
+    font-size: 22px;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background-color: gray;
+}
