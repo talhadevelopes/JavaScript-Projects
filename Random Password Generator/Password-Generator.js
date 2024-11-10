@@ -1,5 +1,5 @@
 const passwordBox = document.getElementById('password');
-const length = 12;
+const length = 20;
 const generatePasswordButton = document.getElementById('generate-password-button');
 const copyButton = document.getElementById('copy-button');
 
