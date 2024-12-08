@@ -1,0 +1,12 @@
+1. AJAX: aynchronous js and XML
+
+2. JSON: Js Object Notion
+
+3. json() method [this is also Asynchrounous method]: returns second promise that resolves with the result of prsing the response body text as JSON
+------------------
+HTTP Response Status Code.
+1. 100-199: Informational responses
+2. Successful Responses: 200-299
+3. redirection messages: 300-399
+4. client error response: 400 - 499
+5. server errror responses: 500 = 599
